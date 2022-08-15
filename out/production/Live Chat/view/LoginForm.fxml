@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginFormPane" prefHeight="675.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" opacity="0.99" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="612.0">
+         <fill>
+            <LinearGradient endX="0.8714285714285714" endY="1.0">
+               <stops>
+                  <Stop color="#d0c7c7" />
+                  <Stop color="#9e9a9a" offset="0.13745704467353947" />
+                  <Stop color="#365380" offset="0.2969941146265353" />
+                  <Stop color="#214b86" offset="0.4630880436070619" />
+                  <Stop color="#153f80" offset="0.7186080499269261" />
+                  <Stop color="#15458d" offset="0.823715290121262" />
+                  <Stop color="#3049a1" offset="0.9233716475095781" />
+                  <Stop color="#345ed3" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor></Rectangle>
+        <Label layoutX="77.0" layoutY="4.0" prefHeight="42.0" prefWidth="291.0" text="Live Chat Login Room" textFill="WHITE">
+            <font>
+                <Font name="Century" size="27.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/images/icon.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="232.0" fitWidth="344.0" layoutX="190.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/images/loginIcon.png" />
+            </image>
+        </ImageView>
+        <JFXTextField fx:id="txtUserName" focusColor="#0f2668" layoutX="128.0" layoutY="420.0" prefHeight="59.0" prefWidth="357.0" promptText="User Name" unFocusColor="BLACK">
+            <font>
+                <Font name="Cambria" size="26.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+        </JFXTextField>
+      <Group layoutX="183.0" layoutY="521.0">
+         <children>
+              <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="15.0" layoutY="-2.0" prefHeight="65.0" prefWidth="217.0" style="-fx-background-color: #2980b9#3498db#2980b9#3498db; -fx-background-radius: 50;" text="   Login" textFill="WHITE" wrapText="true">
+                  <font>
+                      <Font name="Britannic Bold" size="33.0" />
+                  </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+              </JFXButton>
+              <ImageView fitHeight="50.0" fitWidth="52.0" layoutX="40.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@../assets/images/loginButton.png" />
+                  </image>
+              </ImageView>
+         </children>
+      </Group>
+    </children>
+</AnchorPane>
