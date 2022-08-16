@@ -26,7 +26,7 @@ public class LoginFormController {
         userName = txtUserName.getText().isEmpty() ? "Unknown" : txtUserName.getText();
         Data.userName = userName;
         Stage stage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("../view/UserForm.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../view/"));
         Scene scene = new Scene(root);
         stage.initStyle(StageStyle.TRANSPARENT); //Use For Boarder TRANSPARENT
         root.setOnMousePressed(new EventHandler<MouseEvent>() {
