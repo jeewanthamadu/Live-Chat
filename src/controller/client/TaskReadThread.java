@@ -32,7 +32,7 @@ public class TaskReadThread implements Runnable{
                     System.out.println("message : "+message);
                     client.txtMsgDisplay.appendText(message+"\n");
                 });*/
-                client.txtMsgField.appendText(message + "\n");
+                client.chatPane.appendText(message + "\n");
             } catch (IOException e) {
                 e.printStackTrace();
                 try {

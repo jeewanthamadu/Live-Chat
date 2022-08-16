@@ -25,8 +25,7 @@ public class UserFormController {
         userName = Data.userName;
         System.out.println("userName is : " + userName);
         socket = new Socket(ConnectionUtil.host, ConnectionUtil.port);
-        txtMsgField.appendText("Connect. \n");
-//            txtMsgDisplay.appendText( Data.userName+"\n");
+        chatPane.appendText("Connect. \n");
         printWriter = new PrintWriter(socket.getOutputStream());
         TaskReadThread task = new TaskReadThread(socket, this);
         Thread thread = new Thread(task);
@@ -37,8 +36,9 @@ public class UserFormController {
     public void btnSent(ActionEvent actionEvent) throws IOException {
         printWriter = new PrintWriter(socket.getOutputStream());
         printWriter.println(userName + " : " + txtMsgField.getText());
-//        txtMsgDisplay.appendText("laki : "+txtMsgInput.getText().trim()+"\n");
         printWriter.flush();
+        txtMsgField.clear();
+        txtMsgField.requestFocus();
     }
 
     public void btnCamera(ActionEvent actionEvent) {

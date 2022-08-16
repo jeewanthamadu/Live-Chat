@@ -6,7 +6,6 @@
 <?import javafx.scene.Group?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.effect.Shadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -17,10 +16,7 @@
 
 <AnchorPane fx:id="userFormPane" prefHeight="693.0" prefWidth="490.0" style="-fx-background-color: #c8d6e5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.client.UserFormController">
     <children>
-        <JFXTextArea fx:id="chatPane" layoutX="38.0" layoutY="72.0" prefHeight="539.0" prefWidth="413.0" style="-fx-background-color: #ecf0f1;" unFocusColor="WHITE" wrapText="true">
-         <effect>
-            <Shadow color="WHITE" height="0.0" radius="0.3025" width="3.21" />
-         </effect></JFXTextArea>
+        <JFXTextArea fx:id="chatPane" layoutX="38.0" layoutY="72.0" prefHeight="539.0" prefWidth="413.0" style="-fx-background-color: #ecf0f1;" unFocusColor="WHITE" />
         <JFXButton buttonType="RAISED" layoutX="384.0" layoutY="643.0" onAction="#btnSent" prefHeight="31.0" prefWidth="67.0" style="-fx-background-color: #3498db;" text="Sent" textFill="WHITE">
             <font>
                 <Font name="Gill Sans MT" size="15.0" />
