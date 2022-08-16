@@ -1,57 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="769.0" prefWidth="443.0" style="-fx-background-radius: 10;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.server.ServerFormController">
+<AnchorPane prefHeight="729.0" prefWidth="443.0" style="-fx-background-radius: 10;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.server.ServerFormController">
     <children>
-        <TextField fx:id="txtMsgInput" layoutX="39.0" layoutY="703.0" prefHeight="45.0" prefWidth="288.0" style="-fx-background-radius: 20;">
-            <padding>
-                <Insets left="10.0" right="45.0" />
-            </padding>
-        </TextField>
-        <JFXButton layoutX="336.0" layoutY="706.0" onAction="#btnSend" prefHeight="37.0" prefWidth="68.0" style="-fx-background-color: #0984e3; -fx-background-radius: 20;" text="Send" textFill="WHITE">
-            <font>
-                <Font name="System Bold" size="12.0" />
-            </font>
-        </JFXButton>
-        <JFXButton buttonType="RAISED" layoutX="281.0" layoutY="702.0" prefHeight="45.0" prefWidth="45.0" ripplerFill="#0984e3" style="-fx-background-radius: 0 20 20 0;" text="📷">
-            <font>
-                <Font name="System Bold" size="17.0" />
-            </font>
-        </JFXButton>
-        <TextArea fx:id="txtMsgDisplay" layoutX="39.0" layoutY="124.0" prefHeight="558.0" prefWidth="365.0" />
-        <AnchorPane prefHeight="50.0" prefWidth="443.0" style="-fx-background-color: #e30909;" styleClass="header" stylesheets="@../styles/style.css">
-            <children>
-                <Label prefHeight="50.0" prefWidth="143.0" text="Chat Room - Server" textFill="WHITE" wrapText="true">
-                    <padding>
-                        <Insets left="15.0" />
-                    </padding>
-                    <font>
-                        <Font name="System Bold" size="13.0" />
-                    </font>
-                </Label>
-                <JFXButton layoutX="396.0" layoutY="2.0" onAction="#btnClose" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 50px;" text="❌" textFill="WHITE">
-                    <font>
-                        <Font name="Arial" size="14.0" />
-                    </font>
-                </JFXButton>
-                <JFXButton layoutX="350.0" layoutY="2.0" onAction="#btnMinimize" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 50px;" text="🔻" textFill="WHITE">
-                    <font>
-                        <Font name="Arial" size="14.0" />
-                    </font>
-                </JFXButton>
-            </children>
-        </AnchorPane>
-        <Label layoutX="168.0" layoutY="60.0" text="Server">
-            <font>
-                <Font name="System Bold" size="36.0" />
-            </font>
-        </Label>
+        <TextArea fx:id="txtMsgDisplay" layoutX="39.0" layoutY="79.0" prefHeight="620.0" prefWidth="365.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" opacity="0.99" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="443.0">
+         <fill>
+            <LinearGradient endX="0.8714285714285714" endY="1.0">
+               <stops>
+                  <Stop color="#d0c7c7" />
+                  <Stop color="#9e9a9a" offset="0.13745704467353947" />
+                  <Stop color="#365380" offset="0.2969941146265353" />
+                  <Stop color="#214b86" offset="0.4630880436070619" />
+                  <Stop color="#153f80" offset="0.7186080499269261" />
+                  <Stop color="#15458d" offset="0.823715290121262" />
+                  <Stop color="#3049a1" offset="0.9233716475095781" />
+                  <Stop color="#345ed3" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </Rectangle>
+      <Label layoutX="69.0" layoutY="4.0" prefHeight="42.0" prefWidth="331.0" text="Live Chat Chatting Server Room" textFill="WHITE">
+         <font>
+            <Font name="Century" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="9.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/images/icon.png" />
+         </image>
+      </ImageView>
+          <JFXButton layoutX="387.0" layoutY="15.0" onAction="#btnClose" prefHeight="28.0" prefWidth="34.0" style="-fx-background-radius: 50px;" text="❌" textFill="WHITE">
+              <font>
+                  <Font name="Arial" size="14.0" />
+              </font>
+          </JFXButton>
     </children>
 </AnchorPane>
