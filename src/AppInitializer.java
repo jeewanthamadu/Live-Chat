@@ -12,6 +12,7 @@ public class AppInitializer extends Application {
         launch(args);
     }
 
+    
     @Override
     public void start(Stage primaryStage) throws IOException {
         URL resource = getClass().getResource("view/LoginForm.fxml");
@@ -19,5 +20,7 @@ public class AppInitializer extends Application {
         Scene scene = new Scene(load);
         primaryStage.setScene(scene);
         primaryStage.show();
+
     }
+
 }
