@@ -25,7 +25,7 @@ public class UserFormController {
         userName = Data.userName;
         System.out.println("userName is : " + userName);
         socket = new Socket(ConnectionUtil.host, ConnectionUtil.port);
-        chatPane.appendText("Connect. \n");
+        chatPane.appendText("Connected... \n");
         printWriter = new PrintWriter(socket.getOutputStream());
         TaskReadThread task = new TaskReadThread(socket, this);
         Thread thread = new Thread(task);
