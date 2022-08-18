@@ -23,7 +23,7 @@ public class LoginFormController {
 
 
     public void btnLoginOnAction(ActionEvent actionEvent) throws IOException {
-        userName = txtUserName.getText().isEmpty() ? "Unknown" : txtUserName.getText();
+        userName = txtUserName.getText().isEmpty() ? "Unknown" : txtUserName.getText();//ternary operator
         Data.userName = userName;
         Stage stage = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("../view/UserForm.fxml"));

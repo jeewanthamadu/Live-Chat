@@ -9,13 +9,12 @@ public class ClientConnection implements Runnable{
     private final ServerFormController server;
     private BufferedReader bufferedReader;
     private BufferedWriter bufferedWriter;
-    //    private PrintWriter printWriter;
-    private String user;
 
-    public ClientConnection(Socket socket, ServerFormController server, String user) {
+
+    public ClientConnection(Socket socket, ServerFormController server) {
         this.accept = socket;
         this.server = server;
-        this.user = user;
+
     }
 
     @Override
@@ -50,7 +49,7 @@ public class ClientConnection implements Runnable{
         try {
             PrintWriter printWriter = new PrintWriter(accept.getOutputStream());
             printWriter.println(message);
-            System.out.println("He hee : "+message);
+            System.out.println("message : "+message);
             printWriter.flush();
         } catch (IOException e) {
             e.printStackTrace();
