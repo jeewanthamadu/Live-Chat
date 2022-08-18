@@ -27,7 +27,6 @@ public class TaskReadThread implements Runnable{
                     BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
                     String readLine = bufferedReader.readLine();
                     System.out.println(readLine);*/
-
                 /*Platform.runLater(()->{
                     System.out.println("message : "+message);
                     client.txtMsgDisplay.appendText(message+"\n");

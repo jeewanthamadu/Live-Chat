@@ -13,9 +13,9 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="loginFormPane" prefHeight="675.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+<AnchorPane fx:id="loginFormPane" prefHeight="675.0" prefWidth="491.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
     <children>
-        <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" opacity="0.99" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="612.0">
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" opacity="0.99" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="511.0">
          <fill>
             <LinearGradient endX="0.8714285714285714" endY="1.0">
                <stops>
@@ -43,12 +43,12 @@
                 <Image url="@../assets/images/icon.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="232.0" fitWidth="344.0" layoutX="190.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="232.0" fitWidth="344.0" layoutX="139.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../assets/images/loginIcon.png" />
             </image>
         </ImageView>
-        <JFXTextField fx:id="txtUserName" focusColor="#0f2668" layoutX="128.0" layoutY="420.0" prefHeight="59.0" prefWidth="357.0" promptText="User Name" unFocusColor="BLACK">
+        <JFXTextField fx:id="txtUserName" focusColor="#0f2668" layoutX="77.0" layoutY="419.0" prefHeight="59.0" prefWidth="357.0" promptText="User Name" unFocusColor="BLACK">
             <font>
                 <Font name="Cambria" size="26.0" />
             </font>
@@ -58,7 +58,7 @@
         </JFXTextField>
       <Group layoutX="183.0" layoutY="521.0">
          <children>
-              <JFXButton buttonType="RAISED" layoutX="15.0" layoutY="-2.0" onAction="#btnLoginOnAction" prefHeight="65.0" prefWidth="217.0" style="-fx-background-color: #2980b9#3498db#2980b9#3498db; -fx-background-radius: 50;" text="   Login" textFill="WHITE" wrapText="true">
+              <JFXButton buttonType="RAISED" layoutX="-29.0" layoutY="-1.0" onAction="#btnLoginOnAction" prefHeight="65.0" prefWidth="217.0" style="-fx-background-color: #2980b9#3498db#2980b9#3498db; -fx-background-radius: 50;" text="   Login" textFill="WHITE" wrapText="true">
                   <font>
                       <Font name="Britannic Bold" size="33.0" />
                   </font>
@@ -66,7 +66,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
               </JFXButton>
-              <ImageView fitHeight="50.0" fitWidth="52.0" layoutX="40.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+              <ImageView fitHeight="50.0" fitWidth="52.0" layoutX="-4.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                   <image>
                       <Image url="@../assets/images/loginButton.png" />
                   </image>
